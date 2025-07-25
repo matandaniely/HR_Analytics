@@ -183,42 +183,20 @@ Highest Attrition in Lower Income Ranges
 ____________________________________________________________________________________________
 
 ### SQL Queries For Further Analysis
-q = """
 
-WITH AgeGroups AS (
-Select Attrition, Count(*) as Count,
-    CASE
-        WHEN Age < 18 THEN 'Under 18'
-        WHEN Age BETWEEN 18 AND 21 THEN '18-21'
-        WHEN Age BETWEEN 22 and 24 THEN '22-24'
-        WHEN Age BETWEEN 25 and 28 THEN '25-28'
-        WHEN Age BETWEEN 29 and 32 THEN '29-32'
-        WHEN Age BETWEEN 33 and 35 THEN '33-35'
-        WHEN Age BETWEEN 36 and 45 THEN '36-45'
-        WHEN Age BETWEEN 46 and 55 THEN '46-55'
-        WHEN Age BETWEEN 56 and 65 THEN '56-60'
-        ELSE '60+'
-    END AS AgeGroup
-From hr_data
-Group By AgeGroup, Attrition
-Order By AgeGroup, Attrition
-),
+<img width="536" height="772" alt="Screenshot 2025-07-25 at 22 20 46" src="https://github.com/user-attachments/assets/62a555d3-ed3e-42d9-acf0-1872d3d227af" />
 
-TotalCounts AS (
-SELECT AgeGroup, SUM(COUNT) AS TotalGroupCount
-FROM AgeGroups 
-GROUP BY AgeGroup
-)
+<img width="638" height="214" alt="Screenshot 2025-07-25 at 22 21 03" src="https://github.com/user-attachments/assets/4877bd81-0455-4640-8a23-eeaab01b127e" />
 
-SELECT a.AgeGroup, a.Attrition, t.TotalGroupCount, a.Count,
-       (a.Count * 100.0 / t.TotalGroupCount) AS Percentage
-FROM AgeGroups a
-JOIN TotalCounts t ON a.AgeGroup = t.AgeGroup
-WHERE a.Attrition = 'Yes'
-ORDER BY Percentage DESC
-LIMIT 7
 
-"""
+<img width="711" height="762" alt="Screenshot 2025-07-25 at 22 21 18" src="https://github.com/user-attachments/assets/387b376e-679a-4666-96c2-32aed2ea5e38" />
 
-pd.read_sql(q, conn)
+<img width="634" height="394" alt="Screenshot 2025-07-25 at 22 21 32" src="https://github.com/user-attachments/assets/20a25240-c031-441f-a244-0d3505ed5c64" />
+
+
+
+
+
+<img width="1719" height="1139" alt="image" src="https://github.com/user-attachments/assets/4c4c84c9-9b89-4226-b391-0f766c30ccab" />
+
 
