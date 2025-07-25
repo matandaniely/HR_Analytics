@@ -60,7 +60,74 @@ WorkLifeBalance
 
 ## Breakdown of Distance From Home By Job Role and Attrition
 
-Analysis of Distance Effect
+
+### Visualizing how many employees contributed to attrition depending on distance from home between those who stayed and left 
+
+By Number: 
+
+<img width="2740" height="1339" alt="image" src="https://github.com/user-attachments/assets/f5a5f547-986c-4cda-a71b-3517417a3702" />
+
+By Percentage:
+
+<img width="2740" height="1339" alt="image" src="https://github.com/user-attachments/assets/52274a0a-3e20-47a2-bd29-18ab39ec672e" />
+
+True Atrittion Rate per Job Role (leavers/ total in the role):
+
+<img width="770" height="399" alt="Screenshot 2025-07-25 at 15 45 13" src="https://github.com/user-attachments/assets/2da1ec96-61e9-4abc-b493-50845a4ee4c6" />
+
+
+## Key Insights: Job Roles with Notable Attrition Patterns
+From the attrition analysis, five job roles stand out due to high attrition volume or rate. Here's a breakdown:
+
+From this analysis it is important to point out 5 different job roles with significant realization: 
+
+1) Laboratory Technicians
+
+- 62 employees left the company — the highest count among all job roles.
+- This accounts for 26% of all attrition cases.
+- The company currently employs 197 active Laboratory Technicians.
+- The attrition rate for this role is ~24%, making it the second-highest overall — behind Sales Representatives and ahead of Human Resources.
+
+2) Sales Executives 
+
+- 57 employees left, representing 24% of all attrition cases — the second-highest count.
+- With 269 active employees, Sales Executives make up the largest job role in the company.
+- Despite their large presence, their attrition rate is ~17.5%, ranking 4th highest among all roles.
+
+3) Research Scientists
+
+- 47 employees left — the third-highest number overall.
+- This represents ~20% of total attrition.
+- Currently, the company employs 245 active Research Scientists (the second-largest role by count).
+- The attrition rate is ~16%, which ranks 5th among the 9 job categories.
+
+4) Sales Representatives 
+
+- 33 employees left, making up ~14% of attrition cases.
+- The role has only 50 active employees, one of the smallest teams in the company.
+- Their attrition rate is ~40%, the highest among all roles — indicating a serious retention issue.
+
+5) Human Resources 
+
+- 12 employees left, comprising ~5% of total attrition.
+- With just 40 current employees, HR is the smallest department in the dataset.
+- The attrition rate for HR is ~23%, placing it at 3rd highest across all job roles.
+
+Intermediate Summary
+
+- Sales Representatives face the most critical retention challenge with a 40% attrition rate.
+- Laboratory Technicians and Sales Executives contribute the most to the absolute number of employees who left.
+- Human Resources and Research Scientists have above-average attrition rates that merit attention despite lower headcounts.
+
+
+## How Distance From Home Influences Attrition
+
+<img width="769" height="398" alt="Screenshot 2025-07-25 at 15 47 24" src="https://github.com/user-attachments/assets/03ef15e7-2613-4fbf-84b0-5c92eedee54f" />
+
+<img width="759" height="400" alt="Screenshot 2025-07-25 at 15 47 52" src="https://github.com/user-attachments/assets/888f98d1-b190-41fe-b8b8-acff3b72610c" />
+
+
+### Analysis of Distance Effect
 A boxplot visually represents the distribution of a dataset by displaying the median, quartiles, and potential outliers. It summarizes the data using five key values: the minimum, first quartile (Q1), median, third quartile (Q3), and maximum.
 
 A histogram is a graphical representation of the distribution of numerical data, where the data is grouped into ranges (bins) and the frequency of each range is represented by the hight of the bar.
