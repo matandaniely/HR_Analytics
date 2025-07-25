@@ -152,9 +152,14 @@ Human Resources
 
 Among the top five job roles analyzed, Human Resources shows the highest median distance from home at approximately 15 km, though the sample size is relatively small (12 employees). The histogram reveals a wide spread of departure distances between 6 km and 20 km, with no single distance showing more than two occurences. This indicates a more evenly distributed pattern of attrition, without clear concentration at either short or long commutes
 
-
+____________________________________________________________________________________________
 
 ### Analyzing Monthly Income by Education Level and Attrition
+
+<img width="674" height="396" alt="Screenshot 2025-07-25 at 15 50 13" src="https://github.com/user-attachments/assets/c363975c-dcbb-49fb-9eaa-6265cc18d8c0" />
+
+<img width="936" height="352" alt="Screenshot 2025-07-25 at 15 51 09" src="https://github.com/user-attachments/assets/c2f51861-25a8-4494-b115-3fb0d0a46dec" />
+
 
 <img width="1544" height="1143" alt="image" src="https://github.com/user-attachments/assets/8bfcaf1a-a201-4a29-9eb4-99a2430c5210" />
 
