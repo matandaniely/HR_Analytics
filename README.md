@@ -177,4 +177,48 @@ Variabilty and Outliers:
 
 Highest Attrition in Lower Income Ranges
 - For each education group, the left (green) boxes are consistently lower, indicating those who left the company tend to earn less. 
-- This is most prominant in Below College, Bachelors and Doctor categories - showing a potential dissatisfaction or mismatch at higher education levels when income expectations arn't met. 
+- This is most prominant in Below College, Bachelors and Doctor categories - showing a potential dissatisfaction or mismatch at higher education levels when income expectations arn't met.
+
+
+____________________________________________________________________________________________
+
+### SQL Queries For Further Analysis
+q = """
+
+WITH AgeGroups AS (
+Select Attrition, Count(*) as Count,
+    CASE
+        WHEN Age < 18 THEN 'Under 18'
+        WHEN Age BETWEEN 18 AND 21 THEN '18-21'
+        WHEN Age BETWEEN 22 and 24 THEN '22-24'
+        WHEN Age BETWEEN 25 and 28 THEN '25-28'
+        WHEN Age BETWEEN 29 and 32 THEN '29-32'
+        WHEN Age BETWEEN 33 and 35 THEN '33-35'
+        WHEN Age BETWEEN 36 and 45 THEN '36-45'
+        WHEN Age BETWEEN 46 and 55 THEN '46-55'
+        WHEN Age BETWEEN 56 and 65 THEN '56-60'
+        ELSE '60+'
+    END AS AgeGroup
+From hr_data
+Group By AgeGroup, Attrition
+Order By AgeGroup, Attrition
+),
+
+TotalCounts AS (
+SELECT AgeGroup, SUM(COUNT) AS TotalGroupCount
+FROM AgeGroups 
+GROUP BY AgeGroup
+)
+
+SELECT a.AgeGroup, a.Attrition, t.TotalGroupCount, a.Count,
+       (a.Count * 100.0 / t.TotalGroupCount) AS Percentage
+FROM AgeGroups a
+JOIN TotalCounts t ON a.AgeGroup = t.AgeGroup
+WHERE a.Attrition = 'Yes'
+ORDER BY Percentage DESC
+LIMIT 7
+
+"""
+
+pd.read_sql(q, conn)
+
