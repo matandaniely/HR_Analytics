@@ -45,8 +45,20 @@ WorkLifeBalance
 3 'Better'
 4 'Best'
 
+### Checking how many null existis (if any) 
+
+<img width="497" height="602" alt="Screenshot 2025-07-25 at 15 32 46" src="https://github.com/user-attachments/assets/4ae36b8f-fe2e-4356-be70-50c482ad5ed9" />
+
+### Describing data types and checking number of unique values for further filtration
+
+<img width="1390" height="772" alt="Screenshot 2025-07-25 at 15 35 16" src="https://github.com/user-attachments/assets/c58df8b6-5b7c-4660-af56-a932bc6d58ce" />
+
+### Dropping columns that wont contribute much value 
+
+<img width="1192" height="133" alt="Screenshot 2025-07-25 at 15 36 25" src="https://github.com/user-attachments/assets/ca593ff6-2da9-4354-ab39-51895095adc2" />
 
 
+## Breakdown of Distance From Home By Job Role and Attrition
 
 Analysis of Distance Effect
 A boxplot visually represents the distribution of a dataset by displaying the median, quartiles, and potential outliers. It summarizes the data using five key values: the minimum, first quartile (Q1), median, third quartile (Q3), and maximum.
