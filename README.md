@@ -152,11 +152,11 @@ Human Resources
 
 Among the top five job roles analyzed, Human Resources shows the highest median distance from home at approximately 15 km, though the sample size is relatively small (12 employees). The histogram reveals a wide spread of departure distances between 6 km and 20 km, with no single distance showing more than two occurences. This indicates a more evenly distributed pattern of attrition, without clear concentration at either short or long commutes
 
-
+### Analyzing Monthly Income by Education Level and Attrition
 
 <img width="1544" height="1143" alt="image" src="https://github.com/user-attachments/assets/8bfcaf1a-a201-4a29-9eb4-99a2430c5210" />
 
-### Analyzing Monthly Income by Education Level and Attrition
+
 
 The two charts and the table all confirm the same: potentital dissatisfaction or mismatch when income expectations aren;t met are more prominant in those who left. In all categories of educations we see that those who left had a lower mean of income. Also the spread is lower indicating that even those who were paid the most in those groups still earned less than the max of those who stayed.
 
